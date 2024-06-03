@@ -1,0 +1,32 @@
+sudo apt-get update
+git clone https://github.com/visaltyagi/merge-conflict.git
+ls  
+cd merge-conflict
+git branch
+git checkout feature1
+git checkout feature2
+git branch
+git checkout master
+git merge feature2
+git mergetool --tool=
+:wq!
+:wq!
+:wq!
+:wq!
+sudo nano main.c
+git status
+git add .
+git commit –m "first commit"
+git merge feature2
+git mergetool --tool=vimdiff
+:wq!
+:wq!
+:wq!
+:wq!
+sudo nano main. c
+git add .
+git commit –m "second commit"
+git remote add merge-conflict https://github.com/visaltyagi/merge-conflict.git
+git remote –v
+sudo rm -r main.c.orig
+git push merge-conflict master
